@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  FeedViewController.h
 //  MTech_iPadApp
 //
 //  Created by Tom Longabaugh on 2/11/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface FeedViewController : UIViewController
 
 
 @end

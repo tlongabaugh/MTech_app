@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  CalendarViewController.h
 //  MTech_iPadApp
 //
 //  Created by Tom Longabaugh on 2/11/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface CalendarViewController : UIViewController
 
 
 @end
