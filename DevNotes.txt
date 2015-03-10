@@ -1,0 +1,20 @@
+iPad app notes:
+
+1) Calendar portion:
+-in app, pulls from a google calendar
+
+2) RSS feed
+-stories
+-pictures
+-announcements
+-videos
+-articles
+
+-should have some formatting - image on top, then text below?
+-maybe have tags for what type of info it is?
+-links that either need to be pulled or are in app?
+
+3) Info section
+- How to book time
+- How to book equipment
+- Contact information
