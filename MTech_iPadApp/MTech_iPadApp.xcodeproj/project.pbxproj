@@ -71,6 +71,7 @@
 		E2B58CD81AA90A280072F713 /* WeeklyCalendar.png in Resources */ = {isa = PBXBuildFile; fileRef = E2B58CA11AA90A280072F713 /* WeeklyCalendar.png */; };
 		E2B58CD91AA90A280072F713 /* YearlyCalendar.png in Resources */ = {isa = PBXBuildFile; fileRef = E2B58CA21AA90A280072F713 /* YearlyCalendar.png */; };
 		E2B58CDC1AA90E3B0072F713 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58CDB1AA90E3B0072F713 /* RootViewController.m */; };
+		E2E7988A1AB76F9A00F07180 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E798891AB76F9A00F07180 /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -208,6 +209,8 @@
 		E2B58CA21AA90A280072F713 /* YearlyCalendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YearlyCalendar.png; sourceTree = "<group>"; };
 		E2B58CDA1AA90E3B0072F713 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		E2B58CDB1AA90E3B0072F713 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E2E798881AB76F9A00F07180 /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		E2E798891AB76F9A00F07180 /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +260,8 @@
 				E27611F01A8C244B00135601 /* CalendarViewController.m */,
 				E27611F21A8C244B00135601 /* FeedViewController.h */,
 				E27611F31A8C244B00135601 /* FeedViewController.m */,
+				E2E798881AB76F9A00F07180 /* InfoViewController.h */,
+				E2E798891AB76F9A00F07180 /* InfoViewController.m */,
 				E27611F51A8C244B00135601 /* Main.storyboard */,
 				E27611F81A8C244B00135601 /* Images.xcassets */,
 				E27611FA1A8C244B00135601 /* LaunchScreen.xib */,
@@ -781,6 +786,7 @@
 				E2B58CBE1AA90A280072F713 /* FFYearCell.m in Sources */,
 				E2B58CA81AA90A280072F713 /* FFDayCollectionView.m in Sources */,
 				E2B58CCB1AA90A280072F713 /* FFButtonWithHourPopover.m in Sources */,
+				E2E7988A1AB76F9A00F07180 /* InfoViewController.m in Sources */,
 				E2B58CC41AA90A280072F713 /* UIColor+FFMoreColors.m in Sources */,
 				E2B58CB51AA90A280072F713 /* FFViewWithHourLines.m in Sources */,
 				E27611F41A8C244B00135601 /* FeedViewController.m in Sources */,
