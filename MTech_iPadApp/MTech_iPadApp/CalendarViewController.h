@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FFCalendar.h"
+#import "FFCalendarViewController.h"
 
 @interface CalendarViewController : UIViewController
 
+/* Initializes and sets up the calendar component */
+- (void)displayFFCalendar;
+
+/* Creates an array to store calendar events */
+- (NSMutableArray *)arrayWithEvents;
 
 @end
 

@@ -17,11 +17,42 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // Display the Calendar
+    [self displayFFCalendar];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)displayFFCalendar {
+    
+    FFCalendarViewController *calendarVc = [FFCalendarViewController new];
+    [calendarVc setProtocol:self];
+    [calendarVc setArrayWithEvents:[self arrayWithEvents]];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:calendarVc];
+    navigationController.view.frame = CGRectMake(0., 0., self.view.frame.size.width, self.view.frame.size.height);
+    
+    [self addChildViewController:navigationController];
+    [self.view addSubview:navigationController.view];
+    [navigationController didMoveToParentViewController:self];
+}
+
+- (NSMutableArray *)arrayWithEvents {
+    
+    FFEvent *event1 = [FFEvent new];
+    [event1 setStringCustomerName: @"Customer A"];
+    [event1 setNumCustomerID:@1];
+    [event1 setDateDay:[NSDate dateWithYear:[NSDate componentsOfCurrentDate].year month:[NSDate componentsOfCurrentDate].month day:[NSDate componentsOfCurrentDate].day]];
+    [event1 setDateTimeBegin:[NSDate dateWithHour:10 min:00]];
+    [event1 setDateTimeEnd:[NSDate dateWithHour:15 min:13]];
+    [event1 setArrayWithGuests:[NSMutableArray arrayWithArray:@[@[@111, @"Guest 2", @"email2@email.com"], @[@111, @"Guest 4", @"email4@email.com"], @[@111, @"Guest 5", @"email5@email.com"], @[@111, @"Guest 7", @"email7@email.com"]]]];
+    
+    return [NSMutableArray arrayWithArray:@[event1]];
 }
 
 @end
