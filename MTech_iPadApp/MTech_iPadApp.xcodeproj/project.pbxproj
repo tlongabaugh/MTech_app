@@ -40,13 +40,6 @@
 		E2B58CB71AA90A280072F713 /* FFWeekCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C511AA90A280072F713 /* FFWeekCollectionView.m */; };
 		E2B58CB81AA90A280072F713 /* FFWeekCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C531AA90A280072F713 /* FFWeekCollectionViewFlowLayout.m */; };
 		E2B58CB91AA90A280072F713 /* FFWeekScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C551AA90A280072F713 /* FFWeekScrollView.m */; };
-		E2B58CBA1AA90A280072F713 /* FFYearCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C581AA90A280072F713 /* FFYearCalendarView.m */; };
-		E2B58CBB1AA90A280072F713 /* FFHeaderMonthForYearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C5D1AA90A280072F713 /* FFHeaderMonthForYearCell.m */; };
-		E2B58CBC1AA90A280072F713 /* FFMonthCellForYearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C5F1AA90A280072F713 /* FFMonthCellForYearCell.m */; };
-		E2B58CBD1AA90A280072F713 /* FFMonthCollectionViewForYearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C611AA90A280072F713 /* FFMonthCollectionViewForYearCell.m */; };
-		E2B58CBE1AA90A280072F713 /* FFYearCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C631AA90A280072F713 /* FFYearCell.m */; };
-		E2B58CBF1AA90A280072F713 /* FFYearCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C651AA90A280072F713 /* FFYearCollectionView.m */; };
-		E2B58CC01AA90A280072F713 /* FFYearCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C671AA90A280072F713 /* FFYearCollectionViewFlowLayout.m */; };
 		E2B58CC11AA90A280072F713 /* FFBlueButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C6B1AA90A280072F713 /* FFBlueButton.m */; };
 		E2B58CC21AA90A280072F713 /* FFRedAndWhiteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C6D1AA90A280072F713 /* FFRedAndWhiteButton.m */; };
 		E2B58CC31AA90A280072F713 /* NSDate+FFDaysCount.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C701AA90A280072F713 /* NSDate+FFDaysCount.m */; };
@@ -153,20 +146,6 @@
 		E2B58C531AA90A280072F713 /* FFWeekCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFWeekCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		E2B58C541AA90A280072F713 /* FFWeekScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFWeekScrollView.h; sourceTree = "<group>"; };
 		E2B58C551AA90A280072F713 /* FFWeekScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFWeekScrollView.m; sourceTree = "<group>"; };
-		E2B58C571AA90A280072F713 /* FFYearCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFYearCalendarView.h; sourceTree = "<group>"; };
-		E2B58C581AA90A280072F713 /* FFYearCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFYearCalendarView.m; sourceTree = "<group>"; };
-		E2B58C5C1AA90A280072F713 /* FFHeaderMonthForYearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFHeaderMonthForYearCell.h; sourceTree = "<group>"; };
-		E2B58C5D1AA90A280072F713 /* FFHeaderMonthForYearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFHeaderMonthForYearCell.m; sourceTree = "<group>"; };
-		E2B58C5E1AA90A280072F713 /* FFMonthCellForYearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFMonthCellForYearCell.h; sourceTree = "<group>"; };
-		E2B58C5F1AA90A280072F713 /* FFMonthCellForYearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFMonthCellForYearCell.m; sourceTree = "<group>"; };
-		E2B58C601AA90A280072F713 /* FFMonthCollectionViewForYearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFMonthCollectionViewForYearCell.h; sourceTree = "<group>"; };
-		E2B58C611AA90A280072F713 /* FFMonthCollectionViewForYearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFMonthCollectionViewForYearCell.m; sourceTree = "<group>"; };
-		E2B58C621AA90A280072F713 /* FFYearCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFYearCell.h; sourceTree = "<group>"; };
-		E2B58C631AA90A280072F713 /* FFYearCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFYearCell.m; sourceTree = "<group>"; };
-		E2B58C641AA90A280072F713 /* FFYearCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFYearCollectionView.h; sourceTree = "<group>"; };
-		E2B58C651AA90A280072F713 /* FFYearCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFYearCollectionView.m; sourceTree = "<group>"; };
-		E2B58C661AA90A280072F713 /* FFYearCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFYearCollectionViewFlowLayout.h; sourceTree = "<group>"; };
-		E2B58C671AA90A280072F713 /* FFYearCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFYearCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		E2B58C6A1AA90A280072F713 /* FFBlueButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFBlueButton.h; sourceTree = "<group>"; };
 		E2B58C6B1AA90A280072F713 /* FFBlueButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFBlueButton.m; sourceTree = "<group>"; };
 		E2B58C6C1AA90A280072F713 /* FFRedAndWhiteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFRedAndWhiteButton.h; sourceTree = "<group>"; };
@@ -330,7 +309,6 @@
 				E2B58C191AA90A280072F713 /* FFDayCalendarView */,
 				E2B58C2F1AA90A280072F713 /* FFMonthCalendarView */,
 				E2B58C3F1AA90A280072F713 /* FFWeekCalendarView */,
-				E2B58C561AA90A280072F713 /* FFYearCalendarView */,
 				E2B58C681AA90A280072F713 /* Util */,
 			);
 			path = FFCalendars;
@@ -497,51 +475,6 @@
 				E2B58C531AA90A280072F713 /* FFWeekCollectionViewFlowLayout.m */,
 			);
 			path = FFWeekCollectionView;
-			sourceTree = "<group>";
-		};
-		E2B58C561AA90A280072F713 /* FFYearCalendarView */ = {
-			isa = PBXGroup;
-			children = (
-				E2B58C571AA90A280072F713 /* FFYearCalendarView.h */,
-				E2B58C581AA90A280072F713 /* FFYearCalendarView.m */,
-				E2B58C591AA90A280072F713 /* FFYearCollectionView */,
-			);
-			path = FFYearCalendarView;
-			sourceTree = "<group>";
-		};
-		E2B58C591AA90A280072F713 /* FFYearCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				E2B58C5A1AA90A280072F713 /* FFYearCell */,
-				E2B58C641AA90A280072F713 /* FFYearCollectionView.h */,
-				E2B58C651AA90A280072F713 /* FFYearCollectionView.m */,
-				E2B58C661AA90A280072F713 /* FFYearCollectionViewFlowLayout.h */,
-				E2B58C671AA90A280072F713 /* FFYearCollectionViewFlowLayout.m */,
-			);
-			path = FFYearCollectionView;
-			sourceTree = "<group>";
-		};
-		E2B58C5A1AA90A280072F713 /* FFYearCell */ = {
-			isa = PBXGroup;
-			children = (
-				E2B58C5B1AA90A280072F713 /* FFMonthCollectionViewForYearCell */,
-				E2B58C621AA90A280072F713 /* FFYearCell.h */,
-				E2B58C631AA90A280072F713 /* FFYearCell.m */,
-			);
-			path = FFYearCell;
-			sourceTree = "<group>";
-		};
-		E2B58C5B1AA90A280072F713 /* FFMonthCollectionViewForYearCell */ = {
-			isa = PBXGroup;
-			children = (
-				E2B58C5C1AA90A280072F713 /* FFHeaderMonthForYearCell.h */,
-				E2B58C5D1AA90A280072F713 /* FFHeaderMonthForYearCell.m */,
-				E2B58C5E1AA90A280072F713 /* FFMonthCellForYearCell.h */,
-				E2B58C5F1AA90A280072F713 /* FFMonthCellForYearCell.m */,
-				E2B58C601AA90A280072F713 /* FFMonthCollectionViewForYearCell.h */,
-				E2B58C611AA90A280072F713 /* FFMonthCollectionViewForYearCell.m */,
-			);
-			path = FFMonthCollectionViewForYearCell;
 			sourceTree = "<group>";
 		};
 		E2B58C681AA90A280072F713 /* Util */ = {
@@ -806,10 +739,8 @@
 				E2B58CAC1AA90A280072F713 /* FFButtonWithEditAndDetailPopoversForMonthCell.m in Sources */,
 				E2B58CC21AA90A280072F713 /* FFRedAndWhiteButton.m in Sources */,
 				E2B58CB71AA90A280072F713 /* FFWeekCollectionView.m in Sources */,
-				E2B58CC01AA90A280072F713 /* FFYearCollectionViewFlowLayout.m in Sources */,
 				E2B58CD11AA90A280072F713 /* FFSearchBarWithAutoComplete.m in Sources */,
 				E2B58CD31AA90A280072F713 /* FFEventDetailView.m in Sources */,
-				E2B58CBE1AA90A280072F713 /* FFYearCell.m in Sources */,
 				E2B58CA81AA90A280072F713 /* FFDayCollectionView.m in Sources */,
 				E2B58CCB1AA90A280072F713 /* FFButtonWithHourPopover.m in Sources */,
 				E2235E861AC12179008C6234 /* MTPurpleAndWhiteButton.m in Sources */,
@@ -825,7 +756,6 @@
 				E2B58CAD1AA90A280072F713 /* FFMonthCell.m in Sources */,
 				E2B58CC61AA90A280072F713 /* UILabel+FFCustomMethods.m in Sources */,
 				E2B58CB91AA90A280072F713 /* FFWeekScrollView.m in Sources */,
-				E2B58CBA1AA90A280072F713 /* FFYearCalendarView.m in Sources */,
 				E2B58CCA1AA90A280072F713 /* FFDatePopoverController.m in Sources */,
 				E2B58CB31AA90A280072F713 /* FFWeekHeaderCollectionView.m in Sources */,
 				E2B58CA31AA90A280072F713 /* FFDayCalendarView.m in Sources */,
@@ -847,15 +777,11 @@
 				E2B58CB01AA90A280072F713 /* FFMonthHeaderView.m in Sources */,
 				E27611EB1A8C244B00135601 /* main.m in Sources */,
 				E2B58CCD1AA90A280072F713 /* FFEditEventPopoverController.m in Sources */,
-				E2B58CBB1AA90A280072F713 /* FFHeaderMonthForYearCell.m in Sources */,
 				E2B58CCC1AA90A280072F713 /* FFHourPopoverController.m in Sources */,
 				E2B58CC31AA90A280072F713 /* NSDate+FFDaysCount.m in Sources */,
 				E2B58CD21AA90A280072F713 /* FFEventDetailPopoverController.m in Sources */,
 				E2B58CA71AA90A280072F713 /* FFDayCell.m in Sources */,
 				E2B58CAB1AA90A280072F713 /* FFMonthCalendarView.m in Sources */,
-				E2B58CBD1AA90A280072F713 /* FFMonthCollectionViewForYearCell.m in Sources */,
-				E2B58CBF1AA90A280072F713 /* FFYearCollectionView.m in Sources */,
-				E2B58CBC1AA90A280072F713 /* FFMonthCellForYearCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,17 +7,17 @@
 //
 //  http://fernandasportfolio.tumblr.com
 //
+//
+//  Modified by Tom Longabaugh 2015
 
 #import <Foundation/Foundation.h>
 
-#import "FFYearCalendarView.h"
 #import "FFMonthCalendarView.h"
 #import "FFWeekCalendarView.h"
 #import "FFDayCalendarView.h"
 
 #import "FFEvent.h"
 
-#import "FFRedAndWhiteButton.h"
 #import "FFEditEventPopoverController.h"
 #import "FFImportantFilesForCalendar.h"
 
