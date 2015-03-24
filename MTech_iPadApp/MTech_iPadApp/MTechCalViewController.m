@@ -139,9 +139,9 @@
     fixedItem.width = 30.;
     
     // Buttons for each calendar
-    FFRedAndWhiteButton *buttonMonth = [self calendarButtonWithTitle:@"month"];
-    FFRedAndWhiteButton *buttonWeek = [self calendarButtonWithTitle:@"week"];
-    FFRedAndWhiteButton *buttonDay = [self calendarButtonWithTitle:@"day"];
+    MTPurpleAndWhiteButton *buttonMonth = [self calendarButtonWithTitle:@"month"];
+    MTPurpleAndWhiteButton *buttonWeek = [self calendarButtonWithTitle:@"week"];
+    MTPurpleAndWhiteButton *buttonDay = [self calendarButtonWithTitle:@"day"];
     UIBarButtonItem *barButtonMonth = [[UIBarButtonItem alloc] initWithCustomView:buttonMonth];
     UIBarButtonItem *barButtonWeek = [[UIBarButtonItem alloc] initWithCustomView:buttonWeek];
     UIBarButtonItem *barButtonDay = [[UIBarButtonItem alloc] initWithCustomView:buttonDay];
@@ -158,14 +158,14 @@
     fixedItem.width = 30.;
     
     // Today button
-    FFRedAndWhiteButton *buttonToday = [[FFRedAndWhiteButton alloc] initWithFrame:CGRectMake(0., 0., 80., 30)];
+    MTPurpleAndWhiteButton *buttonToday = [[MTPurpleAndWhiteButton alloc] initWithFrame:CGRectMake(0., 0., 80., 30)];
     [buttonToday addTarget:self action:@selector(buttonTodayAction:) forControlEvents:UIControlEventTouchUpInside];
     [buttonToday setTitle:@"today" forState:UIControlStateNormal];
     UIBarButtonItem *barButtonToday = [[UIBarButtonItem alloc] initWithCustomView:buttonToday];
     
     // Label for the month and year
     labelWithMonthAndYear = [[UILabel alloc] initWithFrame:CGRectMake(0., 0., 170., 30)];
-    [labelWithMonthAndYear setTextColor:[UIColor redColor]];
+    [labelWithMonthAndYear setTextColor:[UIColor nyuPurpleCustom]];
     [labelWithMonthAndYear setFont:buttonToday.titleLabel.font];
     UIBarButtonItem *barButtonLabel = [[UIBarButtonItem alloc] initWithCustomView:labelWithMonthAndYear];
     
@@ -173,9 +173,9 @@
     [self.navigationItem setLeftBarButtonItems:@[barButtonLabel, fixedItem, barButtonToday]];
 }
 
-- (FFRedAndWhiteButton *)calendarButtonWithTitle:(NSString *)title {
+- (MTPurpleAndWhiteButton *)calendarButtonWithTitle:(NSString *)title {
     
-    FFRedAndWhiteButton *button = [[FFRedAndWhiteButton alloc] initWithFrame:CGRectMake(0., 0., 80., 30.)];
+    MTPurpleAndWhiteButton *button = [[MTPurpleAndWhiteButton alloc] initWithFrame:CGRectMake(0., 0., 80., 30.)];
     [button addTarget:self action:@selector(buttonYearMonthWeekDayAction:) forControlEvents:UIControlEventTouchUpInside];
     [button setTitle:title forState:UIControlStateNormal];
     return button;

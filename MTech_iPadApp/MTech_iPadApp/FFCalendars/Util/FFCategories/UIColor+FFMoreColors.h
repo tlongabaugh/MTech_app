@@ -14,5 +14,6 @@
 
 + (UIColor *)lighterGrayCustom;
 + (UIColor *)lightGrayCustom;
++ (UIColor *)nyuPurpleCustom;
 
 @end

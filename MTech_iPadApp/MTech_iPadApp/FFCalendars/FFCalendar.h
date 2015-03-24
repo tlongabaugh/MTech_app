@@ -18,9 +18,12 @@
 #import "FFEvent.h"
 
 #import "FFRedAndWhiteButton.h"
-#import "FFButtonAddEventWithPopover.h"
 #import "FFEditEventPopoverController.h"
 #import "FFImportantFilesForCalendar.h"
+
+/* Added by Tom Longabaugh */
+#import "MTPurpleAndWhiteButton.h"
+
 
 @interface FFCalendar : NSObject
 
