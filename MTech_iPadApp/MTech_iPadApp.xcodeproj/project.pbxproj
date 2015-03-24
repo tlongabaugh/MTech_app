@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E2235E761AC109E1008C6234 /* MTechCalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2235E751AC109E1008C6234 /* MTechCalViewController.m */; };
-		E25A205D1AB778D800AA53F6 /* FFAddEventPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A20581AB778D800AA53F6 /* FFAddEventPopoverController.m */; };
-		E25A205E1AB778D800AA53F6 /* FFButtonAddEventWithPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A205A1AB778D800AA53F6 /* FFButtonAddEventWithPopover.m */; };
-		E25A205F1AB778D800AA53F6 /* FFCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A205C1AB778D800AA53F6 /* FFCalendarViewController.m */; };
 		E27611EB1A8C244B00135601 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611EA1A8C244B00135601 /* main.m */; };
 		E27611EE1A8C244B00135601 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611ED1A8C244B00135601 /* AppDelegate.m */; };
 		E27611F11A8C244B00135601 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611F01A8C244B00135601 /* CalendarViewController.m */; };
@@ -91,12 +88,6 @@
 /* Begin PBXFileReference section */
 		E2235E741AC109E1008C6234 /* MTechCalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTechCalViewController.h; sourceTree = "<group>"; };
 		E2235E751AC109E1008C6234 /* MTechCalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTechCalViewController.m; sourceTree = "<group>"; };
-		E25A20571AB778D800AA53F6 /* FFAddEventPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAddEventPopoverController.h; sourceTree = "<group>"; };
-		E25A20581AB778D800AA53F6 /* FFAddEventPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAddEventPopoverController.m; sourceTree = "<group>"; };
-		E25A20591AB778D800AA53F6 /* FFButtonAddEventWithPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFButtonAddEventWithPopover.h; sourceTree = "<group>"; };
-		E25A205A1AB778D800AA53F6 /* FFButtonAddEventWithPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFButtonAddEventWithPopover.m; sourceTree = "<group>"; };
-		E25A205B1AB778D800AA53F6 /* FFCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFCalendarViewController.h; sourceTree = "<group>"; };
-		E25A205C1AB778D800AA53F6 /* FFCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFCalendarViewController.m; sourceTree = "<group>"; };
 		E27611E51A8C244B00135601 /* MTech_iPadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTech_iPadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27611E91A8C244B00135601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27611EA1A8C244B00135601 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -243,27 +234,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E25A20551AB778D800AA53F6 /* FFCalendarViewController */ = {
-			isa = PBXGroup;
-			children = (
-				E25A20561AB778D800AA53F6 /* FFButtonAddEventWithPopover */,
-				E25A205B1AB778D800AA53F6 /* FFCalendarViewController.h */,
-				E25A205C1AB778D800AA53F6 /* FFCalendarViewController.m */,
-			);
-			path = FFCalendarViewController;
-			sourceTree = "<group>";
-		};
-		E25A20561AB778D800AA53F6 /* FFButtonAddEventWithPopover */ = {
-			isa = PBXGroup;
-			children = (
-				E25A20571AB778D800AA53F6 /* FFAddEventPopoverController.h */,
-				E25A20581AB778D800AA53F6 /* FFAddEventPopoverController.m */,
-				E25A20591AB778D800AA53F6 /* FFButtonAddEventWithPopover.h */,
-				E25A205A1AB778D800AA53F6 /* FFButtonAddEventWithPopover.m */,
-			);
-			path = FFButtonAddEventWithPopover;
-			sourceTree = "<group>";
-		};
 		E27611DC1A8C244B00135601 = {
 			isa = PBXGroup;
 			children = (
@@ -300,7 +270,6 @@
 				E27611F51A8C244B00135601 /* Main.storyboard */,
 				E27611F81A8C244B00135601 /* Images.xcassets */,
 				E27611FA1A8C244B00135601 /* LaunchScreen.xib */,
-				E25A20551AB778D800AA53F6 /* FFCalendarViewController */,
 				E2B58C171AA90A280072F713 /* FFCalendars */,
 				E27611E81A8C244B00135601 /* Supporting Files */,
 			);
@@ -833,7 +802,6 @@
 				E2B58CB41AA90A280072F713 /* FFHourAndMinLabel.m in Sources */,
 				E2B58CAD1AA90A280072F713 /* FFMonthCell.m in Sources */,
 				E2B58CC61AA90A280072F713 /* UILabel+FFCustomMethods.m in Sources */,
-				E25A205F1AB778D800AA53F6 /* FFCalendarViewController.m in Sources */,
 				E2B58CB91AA90A280072F713 /* FFWeekScrollView.m in Sources */,
 				E2B58CBA1AA90A280072F713 /* FFYearCalendarView.m in Sources */,
 				E2B58CCA1AA90A280072F713 /* FFDatePopoverController.m in Sources */,
@@ -848,14 +816,12 @@
 				E2B58CC51AA90A280072F713 /* UIImage+FFCustomMethods.m in Sources */,
 				E2B58CC91AA90A280072F713 /* FFButtonWithDatePopover.m in Sources */,
 				E2B58CAA1AA90A280072F713 /* FFDayScrollView.m in Sources */,
-				E25A205D1AB778D800AA53F6 /* FFAddEventPopoverController.m in Sources */,
 				E2B58CCF1AA90A280072F713 /* FFGuestsTableView.m in Sources */,
 				E2B58CAE1AA90A280072F713 /* FFMonthCollectionView.m in Sources */,
 				E2B58CB21AA90A280072F713 /* FFWeekHeaderCell.m in Sources */,
 				E2235E761AC109E1008C6234 /* MTechCalViewController.m in Sources */,
 				E2B58CB81AA90A280072F713 /* FFWeekCollectionViewFlowLayout.m in Sources */,
 				E2B58CA51AA90A280072F713 /* FFDayHeaderCell.m in Sources */,
-				E25A205E1AB778D800AA53F6 /* FFButtonAddEventWithPopover.m in Sources */,
 				E2B58CB01AA90A280072F713 /* FFMonthHeaderView.m in Sources */,
 				E27611EB1A8C244B00135601 /* main.m in Sources */,
 				E2B58CCD1AA90A280072F713 /* FFEditEventPopoverController.m in Sources */,
