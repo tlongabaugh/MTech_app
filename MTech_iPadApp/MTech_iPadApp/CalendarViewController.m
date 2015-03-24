@@ -20,7 +20,12 @@
     
     // Display the Calendar
     [self displayFFCalendar];
+    /*CGRect frame = CGRectMake(0., 0., self.view.frame.size.width, self.view.frame.size.height);
     
+    FFMonthCalendarView *viewCalendarYear = [[FFMonthCalendarView alloc] initWithFrame:frame];
+    [viewCalendarYear setProtocol:self];
+    [self.view addSubview:viewCalendarYear];
+    */
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,7 +35,7 @@
 
 - (void)displayFFCalendar {
     
-    FFCalendarViewController *calendarVc = [FFCalendarViewController new];
+    MTechCalViewController *calendarVc = [MTechCalViewController new];
     [calendarVc setProtocol:self];
     [calendarVc setArrayWithEvents:[self arrayWithEvents]];
     

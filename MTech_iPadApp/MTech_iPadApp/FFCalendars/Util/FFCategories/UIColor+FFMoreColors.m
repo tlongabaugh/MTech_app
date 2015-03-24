@@ -20,4 +20,9 @@
    return [UIColor colorWithWhite:0.9 alpha:1];
 }
 
+// Nyu purple color
++ (UIColor *)nyuPurpleCustom {
+    return [UIColor colorWithRed:87.0/255.0 green:6.0/255.0 blue:140.0/255.0 alpha:1.0];
+}
+
 @end

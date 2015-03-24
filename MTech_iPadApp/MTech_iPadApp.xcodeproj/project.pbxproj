@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2235E761AC109E1008C6234 /* MTechCalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2235E751AC109E1008C6234 /* MTechCalViewController.m */; };
 		E25A205D1AB778D800AA53F6 /* FFAddEventPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A20581AB778D800AA53F6 /* FFAddEventPopoverController.m */; };
 		E25A205E1AB778D800AA53F6 /* FFButtonAddEventWithPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A205A1AB778D800AA53F6 /* FFButtonAddEventWithPopover.m */; };
 		E25A205F1AB778D800AA53F6 /* FFCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E25A205C1AB778D800AA53F6 /* FFCalendarViewController.m */; };
@@ -88,6 +89,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2235E741AC109E1008C6234 /* MTechCalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTechCalViewController.h; sourceTree = "<group>"; };
+		E2235E751AC109E1008C6234 /* MTechCalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTechCalViewController.m; sourceTree = "<group>"; };
 		E25A20571AB778D800AA53F6 /* FFAddEventPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFAddEventPopoverController.h; sourceTree = "<group>"; };
 		E25A20581AB778D800AA53F6 /* FFAddEventPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFAddEventPopoverController.m; sourceTree = "<group>"; };
 		E25A20591AB778D800AA53F6 /* FFButtonAddEventWithPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFButtonAddEventWithPopover.h; sourceTree = "<group>"; };
@@ -282,6 +285,8 @@
 		E27611E71A8C244B00135601 /* MTech_iPadApp */ = {
 			isa = PBXGroup;
 			children = (
+				E2235E741AC109E1008C6234 /* MTechCalViewController.h */,
+				E2235E751AC109E1008C6234 /* MTechCalViewController.m */,
 				E27611EC1A8C244B00135601 /* AppDelegate.h */,
 				E27611ED1A8C244B00135601 /* AppDelegate.m */,
 				E2B58CDA1AA90E3B0072F713 /* RootViewController.h */,
@@ -847,6 +852,7 @@
 				E2B58CCF1AA90A280072F713 /* FFGuestsTableView.m in Sources */,
 				E2B58CAE1AA90A280072F713 /* FFMonthCollectionView.m in Sources */,
 				E2B58CB21AA90A280072F713 /* FFWeekHeaderCell.m in Sources */,
+				E2235E761AC109E1008C6234 /* MTechCalViewController.m in Sources */,
 				E2B58CB81AA90A280072F713 /* FFWeekCollectionViewFlowLayout.m in Sources */,
 				E2B58CA51AA90A280072F713 /* FFDayHeaderCell.m in Sources */,
 				E25A205E1AB778D800AA53F6 /* FFButtonAddEventWithPopover.m in Sources */,
