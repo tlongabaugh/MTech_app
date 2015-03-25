@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 nyu.edu. All rights reserved.
 //
 
-#import "FFRedAndWhiteButton.h"
+#import <UIKit/UIKit.h>
 
 @interface MTPurpleAndWhiteButton : UIButton
 

@@ -81,7 +81,7 @@
 - (void)markAsCurrentDay {
     
     [self.labelDay setTextColor:[UIColor whiteColor]];
-    [self.imageViewCircle setImage:[UIImage imageNamed:@"redCircle"]];
+    [self.imageViewCircle setImage:[UIImage imageNamed:@"purpleCircle"]];
 }
 
 #pragma mark - Showing Events

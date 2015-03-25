@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E2235E761AC109E1008C6234 /* MTechCalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2235E751AC109E1008C6234 /* MTechCalViewController.m */; };
 		E2235E861AC12179008C6234 /* MTPurpleAndWhiteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2235E851AC12179008C6234 /* MTPurpleAndWhiteButton.m */; };
+		E2519ADD1AC25BCD0056AAFC /* purpleCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = E2519ADC1AC25BCD0056AAFC /* purpleCircle.png */; };
 		E27611EB1A8C244B00135601 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611EA1A8C244B00135601 /* main.m */; };
 		E27611EE1A8C244B00135601 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611ED1A8C244B00135601 /* AppDelegate.m */; };
 		E27611F11A8C244B00135601 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611F01A8C244B00135601 /* CalendarViewController.m */; };
@@ -41,7 +42,6 @@
 		E2B58CB81AA90A280072F713 /* FFWeekCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C531AA90A280072F713 /* FFWeekCollectionViewFlowLayout.m */; };
 		E2B58CB91AA90A280072F713 /* FFWeekScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C551AA90A280072F713 /* FFWeekScrollView.m */; };
 		E2B58CC11AA90A280072F713 /* FFBlueButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C6B1AA90A280072F713 /* FFBlueButton.m */; };
-		E2B58CC21AA90A280072F713 /* FFRedAndWhiteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C6D1AA90A280072F713 /* FFRedAndWhiteButton.m */; };
 		E2B58CC31AA90A280072F713 /* NSDate+FFDaysCount.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C701AA90A280072F713 /* NSDate+FFDaysCount.m */; };
 		E2B58CC41AA90A280072F713 /* UIColor+FFMoreColors.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C721AA90A280072F713 /* UIColor+FFMoreColors.m */; };
 		E2B58CC51AA90A280072F713 /* UIImage+FFCustomMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58C741AA90A280072F713 /* UIImage+FFCustomMethods.m */; };
@@ -84,6 +84,7 @@
 		E2235E751AC109E1008C6234 /* MTechCalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTechCalViewController.m; sourceTree = "<group>"; };
 		E2235E841AC12179008C6234 /* MTPurpleAndWhiteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPurpleAndWhiteButton.h; sourceTree = "<group>"; };
 		E2235E851AC12179008C6234 /* MTPurpleAndWhiteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPurpleAndWhiteButton.m; sourceTree = "<group>"; };
+		E2519ADC1AC25BCD0056AAFC /* purpleCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleCircle.png; sourceTree = "<group>"; };
 		E27611E51A8C244B00135601 /* MTech_iPadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTech_iPadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27611E91A8C244B00135601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27611EA1A8C244B00135601 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,8 +149,6 @@
 		E2B58C551AA90A280072F713 /* FFWeekScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFWeekScrollView.m; sourceTree = "<group>"; };
 		E2B58C6A1AA90A280072F713 /* FFBlueButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFBlueButton.h; sourceTree = "<group>"; };
 		E2B58C6B1AA90A280072F713 /* FFBlueButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFBlueButton.m; sourceTree = "<group>"; };
-		E2B58C6C1AA90A280072F713 /* FFRedAndWhiteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFRedAndWhiteButton.h; sourceTree = "<group>"; };
-		E2B58C6D1AA90A280072F713 /* FFRedAndWhiteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FFRedAndWhiteButton.m; sourceTree = "<group>"; };
 		E2B58C6F1AA90A280072F713 /* NSDate+FFDaysCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+FFDaysCount.h"; sourceTree = "<group>"; };
 		E2B58C701AA90A280072F713 /* NSDate+FFDaysCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FFDaysCount.m"; sourceTree = "<group>"; };
 		E2B58C711AA90A280072F713 /* UIColor+FFMoreColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FFMoreColors.h"; sourceTree = "<group>"; };
@@ -216,14 +215,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E2235E7F1AC12037008C6234 /* Calendar Classes */ = {
+		E2235E7F1AC12037008C6234 /* NYU Calendar Classes */ = {
 			isa = PBXGroup;
 			children = (
 				E2235E831AC120ED008C6234 /* Utils */,
 				E2235E741AC109E1008C6234 /* MTechCalViewController.h */,
 				E2235E751AC109E1008C6234 /* MTechCalViewController.m */,
 			);
-			name = "Calendar Classes";
+			name = "NYU Calendar Classes";
 			sourceTree = "<group>";
 		};
 		E2235E831AC120ED008C6234 /* Utils */ = {
@@ -256,7 +255,7 @@
 		E27611E71A8C244B00135601 /* MTech_iPadApp */ = {
 			isa = PBXGroup;
 			children = (
-				E2235E7F1AC12037008C6234 /* Calendar Classes */,
+				E2235E7F1AC12037008C6234 /* NYU Calendar Classes */,
 				E27611EC1A8C244B00135601 /* AppDelegate.h */,
 				E27611ED1A8C244B00135601 /* AppDelegate.m */,
 				E2B58CDA1AA90E3B0072F713 /* RootViewController.h */,
@@ -497,8 +496,6 @@
 			children = (
 				E2B58C6A1AA90A280072F713 /* FFBlueButton.h */,
 				E2B58C6B1AA90A280072F713 /* FFBlueButton.m */,
-				E2B58C6C1AA90A280072F713 /* FFRedAndWhiteButton.h */,
-				E2B58C6D1AA90A280072F713 /* FFRedAndWhiteButton.m */,
 			);
 			path = "FFBlue and FFRed Buttons";
 			sourceTree = "<group>";
@@ -616,6 +613,7 @@
 		E2B58C9C1AA90A280072F713 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E2519ADC1AC25BCD0056AAFC /* purpleCircle.png */,
 				E2B58C9D1AA90A280072F713 /* blackCircle.png */,
 				E2B58C9E1AA90A280072F713 /* DailyCalendar.png */,
 				E2B58C9F1AA90A280072F713 /* MonthlyCalendar.png */,
@@ -711,6 +709,7 @@
 				E2B58CD41AA90A280072F713 /* blackCircle.png in Resources */,
 				E27611FC1A8C244B00135601 /* LaunchScreen.xib in Resources */,
 				E27611F91A8C244B00135601 /* Images.xcassets in Resources */,
+				E2519ADD1AC25BCD0056AAFC /* purpleCircle.png in Resources */,
 				E2B58CD91AA90A280072F713 /* YearlyCalendar.png in Resources */,
 				E2B58CD71AA90A280072F713 /* redCircle.png in Resources */,
 				E2B58CD51AA90A280072F713 /* DailyCalendar.png in Resources */,
@@ -737,7 +736,6 @@
 				E2B58CC81AA90A280072F713 /* FFEvent.m in Sources */,
 				E2B58CA61AA90A280072F713 /* FFDayHeaderCollectionView.m in Sources */,
 				E2B58CAC1AA90A280072F713 /* FFButtonWithEditAndDetailPopoversForMonthCell.m in Sources */,
-				E2B58CC21AA90A280072F713 /* FFRedAndWhiteButton.m in Sources */,
 				E2B58CB71AA90A280072F713 /* FFWeekCollectionView.m in Sources */,
 				E2B58CD11AA90A280072F713 /* FFSearchBarWithAutoComplete.m in Sources */,
 				E2B58CD31AA90A280072F713 /* FFEventDetailView.m in Sources */,
