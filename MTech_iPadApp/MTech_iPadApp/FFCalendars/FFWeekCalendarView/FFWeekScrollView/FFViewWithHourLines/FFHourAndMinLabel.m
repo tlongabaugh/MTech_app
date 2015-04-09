@@ -49,12 +49,10 @@
     
     // Make hour 12 hr format
     if (hour > 12) {
-        hour -= 12;
-        hourMinString = [NSString stringWithFormat:@"%02ld:%02ld", hour, (long)comp.minute];
+        hourMinString = [NSString stringWithFormat:@"%02ld:%02ld", hour-12, (long)comp.minute];
     }
     else if (hour == 0) {
-        hour = 12;
-        hourMinString = [NSString stringWithFormat:@"%02ld:%02ld", hour, (long)comp.minute];
+        hourMinString = [NSString stringWithFormat:@"%02ld:%02ld", (long)12, (long)comp.minute];
     }
     else if (hour == 12) {
         hourMinString = [NSString stringWithFormat:@"%@", @"Noon"];
