@@ -125,6 +125,7 @@
     labelCustomerName = [[UILabel alloc] initWithFrame:CGRectMake(gap, buttonEditPopover.frame.origin.y, sizeView.width-3*gap-buttonEditPopover.frame.size.width, buttonEditPopover.frame.size.height)];
     [labelCustomerName setText:event.stringCustomerName];
     [labelCustomerName setFont:[UIFont boldSystemFontOfSize:labelCustomerName.font.pointSize]];
+    [buttonEditPopover setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin];
     
     [self addSubview:labelCustomerName];
 }

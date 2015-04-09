@@ -44,7 +44,26 @@
 - (void)showText {
     
     NSDateComponents *comp =  [NSDate componentsOfDate:dateHourAndMin];
-    [self setText:[NSString stringWithFormat:@"%02ld:%02ld", (long)comp.hour, (long)comp.minute]];
+    long hour = (long)comp.hour;
+    NSString *hourMinString;
+    
+    // Make hour 12 hr format
+    if (hour > 12) {
+        hour -= 12;
+        hourMinString = [NSString stringWithFormat:@"%02ld:%02ld", hour, (long)comp.minute];
+    }
+    else if (hour == 0) {
+        hour = 12;
+        hourMinString = [NSString stringWithFormat:@"%02ld:%02ld", hour, (long)comp.minute];
+    }
+    else if (hour == 12) {
+        hourMinString = [NSString stringWithFormat:@"%@", @"Noon"];
+    }
+    else {
+        hourMinString = [NSString stringWithFormat:@"%02ld:%02ld", hour, (long)comp.minute];
+    }
+    
+    [self setText:hourMinString];
     
 }
 
