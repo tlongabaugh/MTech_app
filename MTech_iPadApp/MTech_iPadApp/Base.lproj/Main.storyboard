@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Calendar-->
@@ -16,24 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGk-SF-7Te">
-                                <rect key="frame" x="88" y="36" width="452" height="460"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="pGk-SF-7Te" secondAttribute="bottom" constant="50" id="SvE-U2-1FA"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pGk-SF-7Te" secondAttribute="trailing" constant="20" id="U1p-Kn-oIH"/>
-                            <constraint firstItem="pGk-SF-7Te" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="20" id="evv-hZ-PLf"/>
-                            <constraint firstItem="pGk-SF-7Te" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="20" id="tyT-Ha-LCy"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="calendar-icon" id="acW-dT-cKf"/>
-                    <connections>
-                        <outlet property="conferenceCal" destination="pGk-SF-7Te" id="p7w-tc-sbi"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

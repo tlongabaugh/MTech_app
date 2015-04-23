@@ -14,7 +14,6 @@
 #import "MTechCalViewController.h"
 
 @interface CalendarViewController : UIViewController <UIWebViewDelegate>
-@property (weak, nonatomic) IBOutlet UIWebView *conferenceCal;
 
 /* Initializes and sets up the calendar component */
 - (void)displayFFCalendar;
@@ -22,5 +21,8 @@
 /* Creates an array to store calendar events */
 - (NSMutableArray *)arrayWithEvents;
 
+/* Creates a UIWebView to hold a calendar */
+- (UIWebView*)createUIWebViewWithString:(NSString*)urlString
+                               withSize:(CGSize)size;
 @end
 

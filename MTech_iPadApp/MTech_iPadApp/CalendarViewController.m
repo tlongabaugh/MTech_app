@@ -13,34 +13,70 @@
 @end
 
 @implementation CalendarViewController
-@synthesize conferenceCal = _conferenceCal;
 
-- (void)viewDidLoad {
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
     // Display the Calendar
     //[self displayFFCalendar];
-    /*CGRect frame = CGRectMake(0., 0., self.view.frame.size.width, self.view.frame.size.height);
+    CGSize viewSize = self.view.frame.size;
     
-    FFMonthCalendarView *viewCalendarYear = [[FFMonthCalendarView alloc] initWithFrame:frame];
-    [viewCalendarYear setProtocol:self];
-    [self.view addSubview:viewCalendarYear];
-    */
-    
+    // Create the calendar views
     NSString *fullURL = @"https://www.google.com/calendar/embed?src=nyu.edu_nkls0lfdl9249huug0c7od2qgk%40group.calendar.google.com&ctz=America/New_York&mode=WEEK";
+    UIWebView *studioACal = [self createUIWebViewWithString:fullURL withSize:viewSize];
+    [self.view addSubview:studioACal];
+    
+    //self.conferenceCal.scrollView.bounces = NO;
+
+    /*NSString *fullURL = @"https://www.google.com/calendar/embed?src=nyu.edu_nkls0lfdl9249huug0c7od2qgk%40group.calendar.google.com&ctz=America/New_York&mode=WEEK";
     NSURL *url = [NSURL URLWithString:fullURL];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [self.conferenceCal loadRequest:requestObj];
-    [self.view addSubview:self.conferenceCal];
+    [self.view addSubview:self.conferenceCal];*/
   
     
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (UIWebView*)createUIWebViewWithString:(NSString*)urlString
+                               withSize:(CGSize)size
+{
+    // Get the size of the screen (CalendarViewController), alter it to size our UIWebView
+    CGRect webSize = CGRectMake(0, 0, size.width-80, size.height-120);
+    
+    // Make the UIWebView and center it
+    UIWebView *theWebView = [[UIWebView alloc] initWithFrame:webSize];
+    [theWebView setCenter:CGPointMake(size.width/2, size.height/2)];
+    [theWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
+    return theWebView;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - (void)displayFFCalendar {
     
