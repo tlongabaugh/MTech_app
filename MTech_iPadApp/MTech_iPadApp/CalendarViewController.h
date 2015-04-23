@@ -13,7 +13,8 @@
 #import "FFCalendar.h"
 #import "MTechCalViewController.h"
 
-@interface CalendarViewController : UIViewController
+@interface CalendarViewController : UIViewController <UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *conferenceCal;
 
 /* Initializes and sets up the calendar component */
 - (void)displayFFCalendar;

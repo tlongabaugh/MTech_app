@@ -13,6 +13,7 @@
 @end
 
 @implementation CalendarViewController
+@synthesize conferenceCal = _conferenceCal;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,6 +27,14 @@
     [viewCalendarYear setProtocol:self];
     [self.view addSubview:viewCalendarYear];
     */
+    
+    NSString *fullURL = @"https://www.google.com/calendar/embed?src=nyu.edu_nkls0lfdl9249huug0c7od2qgk%40group.calendar.google.com&ctz=America/New_York&mode=WEEK";
+    NSURL *url = [NSURL URLWithString:fullURL];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [self.conferenceCal loadRequest:requestObj];
+    [self.view addSubview:self.conferenceCal];
+  
+    
 }
 
 - (void)didReceiveMemoryWarning {
