@@ -1,5 +1,8 @@
-/* Responsive iFrame Container, so that the iFrames display correctly in our app */
-/* by Tom Longabaugh */
+/* 
+ * CSS file for Responsive iFrame Container, so that the
+ * iFrames display correctly in our app 
+ *
+ * by Tom Longabaugh */
  
 .responsive-iframe-container {
     position: relative;
