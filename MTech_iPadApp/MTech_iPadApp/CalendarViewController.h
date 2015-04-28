@@ -17,11 +17,6 @@
 - (UIWebView*)createUIWebViewWithString:(NSURL*)url
                                withSize:(CGSize)size;
 
-/* Initializes and sets up the calendar component */
-//- (void)displayFFCalendar;
-
-/* Creates an array to store calendar events */
-//- (NSMutableArray *)arrayWithEvents;
 
 @end
 
