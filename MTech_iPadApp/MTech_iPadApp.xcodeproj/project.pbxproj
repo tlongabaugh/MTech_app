@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		E2235E761AC109E1008C6234 /* MTechCalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2235E751AC109E1008C6234 /* MTechCalViewController.m */; };
 		E2235E861AC12179008C6234 /* MTPurpleAndWhiteButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E2235E851AC12179008C6234 /* MTPurpleAndWhiteButton.m */; };
+		E24854E11AF03F09006D013E /* html in Resources */ = {isa = PBXBuildFile; fileRef = E24854E01AF03F09006D013E /* html */; };
 		E2519ADD1AC25BCD0056AAFC /* purpleCircle.png in Resources */ = {isa = PBXBuildFile; fileRef = E2519ADC1AC25BCD0056AAFC /* purpleCircle.png */; };
 		E27611EB1A8C244B00135601 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611EA1A8C244B00135601 /* main.m */; };
 		E27611EE1A8C244B00135601 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611ED1A8C244B00135601 /* AppDelegate.m */; };
@@ -84,6 +85,7 @@
 		E2235E751AC109E1008C6234 /* MTechCalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTechCalViewController.m; sourceTree = "<group>"; };
 		E2235E841AC12179008C6234 /* MTPurpleAndWhiteButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTPurpleAndWhiteButton.h; sourceTree = "<group>"; };
 		E2235E851AC12179008C6234 /* MTPurpleAndWhiteButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTPurpleAndWhiteButton.m; sourceTree = "<group>"; };
+		E24854E01AF03F09006D013E /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
 		E2519ADC1AC25BCD0056AAFC /* purpleCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purpleCircle.png; sourceTree = "<group>"; };
 		E27611E51A8C244B00135601 /* MTech_iPadApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTech_iPadApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27611E91A8C244B00135601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -269,6 +271,7 @@
 				E27611F51A8C244B00135601 /* Main.storyboard */,
 				E27611F81A8C244B00135601 /* Images.xcassets */,
 				E27611FA1A8C244B00135601 /* LaunchScreen.xib */,
+				E24854E01AF03F09006D013E /* html */,
 				E2B58C171AA90A280072F713 /* FFCalendars */,
 				E27611E81A8C244B00135601 /* Supporting Files */,
 			);
@@ -709,6 +712,7 @@
 				E2B58CD41AA90A280072F713 /* blackCircle.png in Resources */,
 				E27611FC1A8C244B00135601 /* LaunchScreen.xib in Resources */,
 				E27611F91A8C244B00135601 /* Images.xcassets in Resources */,
+				E24854E11AF03F09006D013E /* html in Resources */,
 				E2519ADD1AC25BCD0056AAFC /* purpleCircle.png in Resources */,
 				E2B58CD91AA90A280072F713 /* YearlyCalendar.png in Resources */,
 				E2B58CD71AA90A280072F713 /* redCircle.png in Resources */,
@@ -855,7 +859,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -891,7 +895,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
@@ -904,7 +908,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MTech_iPadApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos8.1;
@@ -916,7 +920,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MTech_iPadApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos8.1;

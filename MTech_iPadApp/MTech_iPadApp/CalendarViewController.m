@@ -22,21 +22,13 @@
     
     // Display the Calendar
     //[self displayFFCalendar];
+    
     CGSize viewSize = self.view.frame.size;
     
-    // Create the calendar views
-    NSString *fullURL = @"https://www.google.com/calendar/embed?src=nyu.edu_nkls0lfdl9249huug0c7od2qgk%40group.calendar.google.com&ctz=America/New_York&mode=WEEK";
-    UIWebView *studioACal = [self createUIWebViewWithString:fullURL withSize:viewSize];
-    [self.view addSubview:studioACal];
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"conferenceRm" ofType:@"html" inDirectory:@"html"]];
+    UIWebView *conferenceRmCal = [self createUIWebViewWithString:url withSize:viewSize];
+    [self.view addSubview:conferenceRmCal];
     
-    //self.conferenceCal.scrollView.bounces = NO;
-
-    /*NSString *fullURL = @"https://www.google.com/calendar/embed?src=nyu.edu_nkls0lfdl9249huug0c7od2qgk%40group.calendar.google.com&ctz=America/New_York&mode=WEEK";
-    NSURL *url = [NSURL URLWithString:fullURL];
-    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
-    [self.conferenceCal loadRequest:requestObj];
-    [self.view addSubview:self.conferenceCal];*/
-  
     
 }
 
@@ -47,7 +39,7 @@
 }
 
 
-- (UIWebView*)createUIWebViewWithString:(NSString*)urlString
+- (UIWebView*)createUIWebViewWithString:(NSURL*)url
                                withSize:(CGSize)size
 {
     // Get the size of the screen (CalendarViewController), alter it to size our UIWebView
@@ -56,7 +48,8 @@
     // Make the UIWebView and center it
     UIWebView *theWebView = [[UIWebView alloc] initWithFrame:webSize];
     [theWebView setCenter:CGPointMake(size.width/2, size.height/2)];
-    [theWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
+    [theWebView loadRequest:[NSURLRequest requestWithURL:url]];
+
     return theWebView;
     
 }

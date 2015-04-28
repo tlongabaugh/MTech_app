@@ -10,6 +10,7 @@
 
 
 #import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
 #import "FFCalendar.h"
 #import "MTechCalViewController.h"
 
@@ -22,7 +23,7 @@
 - (NSMutableArray *)arrayWithEvents;
 
 /* Creates a UIWebView to hold a calendar */
-- (UIWebView*)createUIWebViewWithString:(NSString*)urlString
+- (UIWebView*)createUIWebViewWithString:(NSURL*)url
                                withSize:(CGSize)size;
 @end
 
