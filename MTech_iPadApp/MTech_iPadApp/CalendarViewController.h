@@ -10,20 +10,18 @@
 
 
 #import <UIKit/UIKit.h>
-#import <WebKit/WebKit.h>
-#import "FFCalendar.h"
-#import "MTechCalViewController.h"
 
 @interface CalendarViewController : UIViewController <UIWebViewDelegate>
-
-/* Initializes and sets up the calendar component */
-- (void)displayFFCalendar;
-
-/* Creates an array to store calendar events */
-- (NSMutableArray *)arrayWithEvents;
 
 /* Creates a UIWebView to hold a calendar */
 - (UIWebView*)createUIWebViewWithString:(NSURL*)url
                                withSize:(CGSize)size;
+
+/* Initializes and sets up the calendar component */
+//- (void)displayFFCalendar;
+
+/* Creates an array to store calendar events */
+//- (NSMutableArray *)arrayWithEvents;
+
 @end
 
