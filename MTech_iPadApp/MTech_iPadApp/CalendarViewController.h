@@ -11,11 +11,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CalendarViewController : UIViewController <UIWebViewDelegate>
+@interface CalendarViewController : UIViewController <UIWebViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
+@property (strong, nonatomic) NSArray *studioNames;
+@property (weak, nonatomic) IBOutlet UIPickerView *studioPicker;
+@property (weak, nonatomic) IBOutlet UILabel *selectLabel;
+
 
 /* Creates a UIWebView to hold a calendar */
 - (UIWebView*)createUIWebViewWithString:(NSURL*)url
                                withSize:(CGSize)size;
+
+/* Refreshes each calendar UIWebView so that the calendars 
+ * update with new events */
+-(void)refreshCalendars:(NSTimer *)timer;
 
 
 @end

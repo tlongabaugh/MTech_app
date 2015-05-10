@@ -10,9 +10,16 @@
 
 @interface CalendarViewController ()
 
+
 @end
 
-@implementation CalendarViewController
+@implementation CalendarViewController {
+    UIWebView *conferenceRmCal;
+    UIWebView *dolanCal;
+    UIWebView *researchLabCal;
+    UIWebView *buchlaCal;
+    UIWebView *studyPantryCal;
+}
 
 
 - (void)viewDidLoad
@@ -22,37 +29,50 @@
     // Get the size of the screen
     CGSize viewSize = self.view.frame.size;
     
+    // Initialize the array to hold studio names for the picker
+    self.studioNames = @[@"Conference Room", @"Dolan",
+                      @"Research Lab", @"Buchla", @"Study/Pantry"];
+    
+    // Center the picker and resize it, position label
+    [self.studioPicker setFrame:CGRectMake(0.0, viewSize.height-162, 300.0, 162.0)];
+    self.studioPicker.center = CGPointMake(viewSize.width/2, viewSize.height-162.0);
+    //self.selectLabel.center = CGPointMake(viewSize.width/2, viewSize.height-220);
+    
+
     /* Create the UIWebViews for the calendars */
     
     // Conference Room
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"conferenceRm" ofType:@"html" inDirectory:@"html"]];
-    UIWebView *conferenceRmCal = [self createUIWebViewWithString:url withSize:viewSize];
+    conferenceRmCal = [self createUIWebViewWithString:url withSize:viewSize];
     [self.view addSubview:conferenceRmCal];
     conferenceRmCal.hidden = NO;
     
     // Dolan
     url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"dolan" ofType:@"html" inDirectory:@"html"]];
-    UIWebView *dolanCal = [self createUIWebViewWithString:url withSize:viewSize];
+    dolanCal = [self createUIWebViewWithString:url withSize:viewSize];
     [self.view addSubview:dolanCal];
     dolanCal.hidden = YES;
     
     // Research Lab
     url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"researchLab" ofType:@"html" inDirectory:@"html"]];
-    UIWebView *researchLabCal = [self createUIWebViewWithString:url withSize:viewSize];
+    researchLabCal = [self createUIWebViewWithString:url withSize:viewSize];
     [self.view addSubview:researchLabCal];
     researchLabCal.hidden = YES;
     
     // Buchla
     url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"buchla" ofType:@"html" inDirectory:@"html"]];
-    UIWebView *buchlaCal = [self createUIWebViewWithString:url withSize:viewSize];
+    buchlaCal = [self createUIWebViewWithString:url withSize:viewSize];
     [self.view addSubview:buchlaCal];
     buchlaCal.hidden = YES;
     
     // Study/Pantry
     url = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"studyPantry" ofType:@"html" inDirectory:@"html"]];
-    UIWebView *studyPantryCal = [self createUIWebViewWithString:url withSize:viewSize];
+    studyPantryCal = [self createUIWebViewWithString:url withSize:viewSize];
     [self.view addSubview:studyPantryCal];
     studyPantryCal.hidden = YES;
+    
+    // Create a timer so that the iframes refresh every 5 minutes
+    [NSTimer scheduledTimerWithTimeInterval:5*60.0 target:self selector:@selector(refreshCalendars:) userInfo:nil repeats:YES];
     
     
 }
@@ -78,5 +98,95 @@
 
     return webView;
 }
+
+#pragma mark -
+#pragma mark PickerView DataSource
+
+- (NSInteger)numberOfComponentsInPickerView:
+(UIPickerView *)pickerView
+{
+    // One component in our picker
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component
+{
+    // Get the number of rows
+    return _studioNames.count;
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView
+             titleForRow:(NSInteger)row
+            forComponent:(NSInteger)component
+{
+    // Return the text string for the row
+    return _studioNames[row];
+}
+
+#pragma mark -
+#pragma mark PickerView Delegate
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row
+      inComponent:(NSInteger)component
+{
+    // Change the views according to user selection
+    
+    // Conference room selected
+    if (row == 0) {
+        conferenceRmCal.hidden = NO;
+        dolanCal.hidden = YES;
+        researchLabCal.hidden = YES;
+        buchlaCal.hidden = YES;
+        studyPantryCal.hidden = YES;
+    }
+    // Dolan selected
+    else if (row == 1) {
+        conferenceRmCal.hidden = YES;
+        dolanCal.hidden = NO;
+        researchLabCal.hidden = YES;
+        buchlaCal.hidden = YES;
+        studyPantryCal.hidden = YES;
+    }
+    // Research Lab selected
+    else if (row == 2) {
+        conferenceRmCal.hidden = YES;
+        dolanCal.hidden = YES;
+        researchLabCal.hidden = NO;
+        buchlaCal.hidden = YES;
+        studyPantryCal.hidden = YES;
+    }
+    // Buchla selected
+    else if (row == 3) {
+        conferenceRmCal.hidden = YES;
+        dolanCal.hidden = YES;
+        researchLabCal.hidden = YES;
+        buchlaCal.hidden = NO;
+        studyPantryCal.hidden = YES;
+    }
+    // Study/Pantry selected
+    else {
+        conferenceRmCal.hidden = YES;
+        dolanCal.hidden = YES;
+        researchLabCal.hidden = YES;
+        buchlaCal.hidden = YES;
+        studyPantryCal.hidden = NO;
+    }
+    
+}
+
+-(void)refreshCalendars:(NSTimer *)timer {
+    // Refresh the calendars
+    [conferenceRmCal reload];
+    [dolanCal reload];
+    [researchLabCal reload];
+    [buchlaCal reload];
+    [studyPantryCal reload];
+}
+
+
+
+
+
 
 @end
