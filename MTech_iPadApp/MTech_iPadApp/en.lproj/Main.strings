@@ -1,0 +1,24 @@
+
+/* Class = "UIViewController"; title = "FeedView"; ObjectID = "8rJ-Kc-sve"; */
+"8rJ-Kc-sve.title" = "FeedView";
+
+/* Class = "UIViewController"; title = "Calendar"; ObjectID = "9pv-A4-QxB"; */
+"9pv-A4-QxB.title" = "Calendar";
+
+/* Class = "UIViewController"; title = "Department Info"; ObjectID = "DaD-Hg-LTI"; */
+"DaD-Hg-LTI.title" = "Department Info";
+
+/* Class = "UITabBarItem"; title = "Dept Info"; ObjectID = "Fma-Tk-xAV"; */
+"Fma-Tk-xAV.title" = "Dept Info";
+
+/* Class = "UITabBarItem"; title = "Calendar"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "Calendar";
+
+/* Class = "UITabBarItem"; title = "Events and Projects"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Events and Projects";
+
+/* Class = "UILabel"; text = "Department Info Coming Soon!"; ObjectID = "rXy-7B-CWW"; */
+"rXy-7B-CWW.text" = "Department Info Coming Soon!";
+
+/* Class = "UILabel"; text = "Events and Projects Coming Soon!"; ObjectID = "zEq-FU-wV5"; */
+"zEq-FU-wV5.text" = "Events and Projects Coming Soon!";

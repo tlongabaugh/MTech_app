@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E21A2F1B1B000ED600B493BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27611F51A8C244B00135601 /* Main.storyboard */; };
+		E21A2F1C1B000ED600B493BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27611FA1A8C244B00135601 /* LaunchScreen.xib */; };
 		E24854E11AF03F09006D013E /* html in Resources */ = {isa = PBXBuildFile; fileRef = E24854E01AF03F09006D013E /* html */; };
 		E27611EB1A8C244B00135601 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611EA1A8C244B00135601 /* main.m */; };
 		E27611EE1A8C244B00135601 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611ED1A8C244B00135601 /* AppDelegate.m */; };
 		E27611F11A8C244B00135601 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611F01A8C244B00135601 /* CalendarViewController.m */; };
 		E27611F41A8C244B00135601 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611F31A8C244B00135601 /* FeedViewController.m */; };
-		E27611F71A8C244B00135601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E27611F51A8C244B00135601 /* Main.storyboard */; };
 		E27611F91A8C244B00135601 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27611F81A8C244B00135601 /* Images.xcassets */; };
-		E27611FC1A8C244B00135601 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E27611FA1A8C244B00135601 /* LaunchScreen.xib */; };
 		E27612081A8C244B00135601 /* MTech_iPadAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E27612071A8C244B00135601 /* MTech_iPadAppTests.m */; };
 		E2B58CDC1AA90E3B0072F713 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58CDB1AA90E3B0072F713 /* RootViewController.m */; };
 		E2E7988A1AB76F9A00F07180 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E798891AB76F9A00F07180 /* InfoViewController.m */; };
@@ -217,8 +217,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E27611F71A8C244B00135601 /* Main.storyboard in Resources */,
-				E27611FC1A8C244B00135601 /* LaunchScreen.xib in Resources */,
+				E21A2F1B1B000ED600B493BC /* Main.storyboard in Resources */,
+				E21A2F1C1B000ED600B493BC /* LaunchScreen.xib in Resources */,
 				E27611F91A8C244B00135601 /* Images.xcassets in Resources */,
 				E24854E11AF03F09006D013E /* html in Resources */,
 			);
@@ -367,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MTech_iPadApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -379,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = MTech_iPadApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
