@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E27611E41A8C244B00135601"
-               BuildableName = "MTech_iPadApp.app"
-               BlueprintName = "MTech_iPadApp"
+               BuildableName = "Music Tech.app"
+               BlueprintName = "Music Tech"
                ReferencedContainer = "container:MTech_iPadApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E27611E41A8C244B00135601"
-            BuildableName = "MTech_iPadApp.app"
-            BlueprintName = "MTech_iPadApp"
+            BuildableName = "Music Tech.app"
+            BlueprintName = "Music Tech"
             ReferencedContainer = "container:MTech_iPadApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,12 +72,13 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E27611E41A8C244B00135601"
-            BuildableName = "MTech_iPadApp.app"
-            BlueprintName = "MTech_iPadApp"
+            BuildableName = "Music Tech.app"
+            BlueprintName = "Music Tech"
             ReferencedContainer = "container:MTech_iPadApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -90,12 +91,13 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E27611E41A8C244B00135601"
-            BuildableName = "MTech_iPadApp.app"
-            BlueprintName = "MTech_iPadApp"
+            BuildableName = "Music Tech.app"
+            BlueprintName = "Music Tech"
             ReferencedContainer = "container:MTech_iPadApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
