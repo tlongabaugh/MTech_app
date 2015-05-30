@@ -149,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E27611E41A8C244B00135601 /* Music Tech */ = {
+		E27611E41A8C244B00135601 /* MARL */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E276120B1A8C244B00135601 /* Build configuration list for PBXNativeTarget "Music Tech" */;
+			buildConfigurationList = E276120B1A8C244B00135601 /* Build configuration list for PBXNativeTarget "MARL" */;
 			buildPhases = (
 				E27611E11A8C244B00135601 /* Sources */,
 				E27611E21A8C244B00135601 /* Frameworks */,
@@ -161,7 +161,7 @@
 			);
 			dependencies = (
 			);
-			name = "Music Tech";
+			name = MARL;
 			productName = MTech_iPadApp;
 			productReference = E27611E51A8C244B00135601 /* Music Tech.app */;
 			productType = "com.apple.product-type.application";
@@ -216,7 +216,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E27611E41A8C244B00135601 /* Music Tech */,
+				E27611E41A8C244B00135601 /* MARL */,
 				E27612001A8C244B00135601 /* MTech_iPadAppTests */,
 			);
 		};
@@ -271,7 +271,7 @@
 /* Begin PBXTargetDependency section */
 		E27612031A8C244B00135601 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E27611E41A8C244B00135601 /* Music Tech */;
+			target = E27611E41A8C244B00135601 /* MARL */;
 			targetProxy = E27612021A8C244B00135601 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -452,7 +452,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E276120B1A8C244B00135601 /* Build configuration list for PBXNativeTarget "Music Tech" */ = {
+		E276120B1A8C244B00135601 /* Build configuration list for PBXNativeTarget "MARL" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E276120C1A8C244B00135601 /* Debug */,

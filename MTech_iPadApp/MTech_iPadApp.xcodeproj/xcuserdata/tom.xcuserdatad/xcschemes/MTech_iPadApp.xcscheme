@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E27611E41A8C244B00135601"
-               BuildableName = "Music Tech.app"
-               BlueprintName = "Music Tech"
+               BuildableName = "MARL.app"
+               BlueprintName = "MARL"
                ReferencedContainer = "container:MTech_iPadApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E27611E41A8C244B00135601"
-            BuildableName = "Music Tech.app"
-            BlueprintName = "Music Tech"
+            BuildableName = "MARL.app"
+            BlueprintName = "MARL"
             ReferencedContainer = "container:MTech_iPadApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -77,8 +77,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E27611E41A8C244B00135601"
-            BuildableName = "Music Tech.app"
-            BlueprintName = "Music Tech"
+            BuildableName = "MARL.app"
+            BlueprintName = "MARL"
             ReferencedContainer = "container:MTech_iPadApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -96,8 +96,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "E27611E41A8C244B00135601"
-            BuildableName = "Music Tech.app"
-            BlueprintName = "Music Tech"
+            BuildableName = "MARL.app"
+            BlueprintName = "MARL"
             ReferencedContainer = "container:MTech_iPadApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
