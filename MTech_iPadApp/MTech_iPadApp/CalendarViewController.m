@@ -26,9 +26,9 @@
 @synthesize internetLabel;
 
 
-- (void)viewDidLoad
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidLoad];
+    [super viewDidAppear:animated];
     
     // Get the size of the screen
     CGSize viewSize = self.view.frame.size;
@@ -41,8 +41,10 @@
     [self.studioPicker setFrame:CGRectMake(0.0, viewSize.height-162, 300.0, 162.0)];
     self.studioPicker.center = CGPointMake(viewSize.width/2, viewSize.height-162.0);
     
-    // Create internet connection check label
+    // Format and place internet connection check label
     internetLabel.center = CGPointMake(viewSize.width/2, viewSize.height/2);
+    internetLabel.hidden = YES;
+    internetLabel.text = @"No Internet Connection";
     [self.view addSubview:internetLabel];
 
     /* Create the UIWebViews for the calendars */
@@ -83,8 +85,19 @@
     // Create a timer so that the iframes refresh every 5 minutes
     [NSTimer scheduledTimerWithTimeInterval:5*60.0 target:self selector:@selector(refreshCalendars:) userInfo:nil repeats:YES];
     
+    // Register for foreground events so that calendars refresh when app is reopened
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willEnterForeground) name:UIApplicationWillEnterForegroundNotification object:nil];
+
+    
     
 }
+
+- (void)viewDidDisappear:(BOOL)animated{
+    [super viewDidDisappear:animated];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillEnterForegroundNotification object:nil];
+}
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -197,6 +210,7 @@ numberOfRowsInComponent:(NSInteger)component
     [studyPantryCal reload];
 }
 
+
 -(BOOL)checkInternetReachibility
 {
     // see if we can reach internet
@@ -214,6 +228,19 @@ numberOfRowsInComponent:(NSInteger)component
         self.internetLabel.hidden = YES;
         return true;
     }
+}
+
+- (void)willEnterForeground
+{
+    // Check internet capability
+    [self checkInternetReachibility];
+    
+    // Refresh the calendars
+    [conferenceRmCal reload];
+    [dolanCal reload];
+    [researchLabCal reload];
+    [buchlaCal reload];
+    [studyPantryCal reload];
 }
 
 

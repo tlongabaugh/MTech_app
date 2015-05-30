@@ -28,6 +28,9 @@
 /* Check if the internet is on and reachable from the iOS device */
 -(BOOL)checkInternetReachibility;
 
+/* Reloads the content when the app is reopened from the home screen*/
+- (void)willEnterForeground;
+
 
 @end
 
