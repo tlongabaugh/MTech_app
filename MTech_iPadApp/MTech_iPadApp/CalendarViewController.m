@@ -7,19 +7,23 @@
 //
 
 #import "CalendarViewController.h"
+#import "Reachability.h"
 
 @interface CalendarViewController ()
 
 
 @end
 
-@implementation CalendarViewController {
+@implementation CalendarViewController
+{
+    Reachability *internetReachable;
     UIWebView *conferenceRmCal;
     UIWebView *dolanCal;
     UIWebView *researchLabCal;
     UIWebView *buchlaCal;
     UIWebView *studyPantryCal;
 }
+@synthesize internetLabel;
 
 
 - (void)viewDidLoad
@@ -36,8 +40,10 @@
     // Center the picker and resize it, position label
     [self.studioPicker setFrame:CGRectMake(0.0, viewSize.height-162, 300.0, 162.0)];
     self.studioPicker.center = CGPointMake(viewSize.width/2, viewSize.height-162.0);
-    //self.selectLabel.center = CGPointMake(viewSize.width/2, viewSize.height-220);
     
+    // Create internet connection check label
+    internetLabel.center = CGPointMake(viewSize.width/2, viewSize.height/2);
+    [self.view addSubview:internetLabel];
 
     /* Create the UIWebViews for the calendars */
     
@@ -70,6 +76,9 @@
     studyPantryCal = [self createUIWebViewWithString:url withSize:viewSize];
     [self.view addSubview:studyPantryCal];
     studyPantryCal.hidden = YES;
+    
+    // Make sure the internet is on. If it isn't display error message
+    [self checkInternetReachibility];
     
     // Create a timer so that the iframes refresh every 5 minutes
     [NSTimer scheduledTimerWithTimeInterval:5*60.0 target:self selector:@selector(refreshCalendars:) userInfo:nil repeats:YES];
@@ -175,7 +184,11 @@ numberOfRowsInComponent:(NSInteger)component
     
 }
 
--(void)refreshCalendars:(NSTimer *)timer {
+-(void)refreshCalendars:(NSTimer *)timer
+{
+    // Check internet capability
+    [self checkInternetReachibility];
+    
     // Refresh the calendars
     [conferenceRmCal reload];
     [dolanCal reload];
@@ -184,8 +197,24 @@ numberOfRowsInComponent:(NSInteger)component
     [studyPantryCal reload];
 }
 
-
-
+-(BOOL)checkInternetReachibility
+{
+    // see if we can reach internet
+    internetReachable = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [internetReachable currentReachabilityStatus];
+    
+    if (networkStatus == NotReachable) {
+        // Bring the label to the front, make it visible
+        [self.view bringSubviewToFront:self.internetLabel];
+        self.internetLabel.hidden = NO;
+        return false;
+    }
+    else {
+        // Make the label not visible
+        self.internetLabel.hidden = YES;
+        return true;
+    }
+}
 
 
 

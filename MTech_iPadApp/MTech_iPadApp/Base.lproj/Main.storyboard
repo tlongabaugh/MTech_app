@@ -20,11 +20,19 @@
                                     <outlet property="delegate" destination="9pv-A4-QxB" id="GSE-lz-Mvy"/>
                                 </connections>
                             </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Connection" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QGd-BD-Gwl">
+                                <rect key="frame" x="263" y="492" width="242" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Calendar" image="calendar-icon" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="internetLabel" destination="QGd-BD-Gwl" id="FJl-YQ-Od0"/>
                         <outlet property="studioPicker" destination="d5p-Wt-HTT" id="YUf-q6-r5Y"/>
                     </connections>
                 </viewController>

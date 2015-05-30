@@ -14,7 +14,7 @@
 @interface CalendarViewController : UIViewController <UIWebViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 @property (strong, nonatomic) NSArray *studioNames;
 @property (weak, nonatomic) IBOutlet UIPickerView *studioPicker;
-@property (weak, nonatomic) IBOutlet UILabel *selectLabel;
+@property (weak, nonatomic) IBOutlet UILabel *internetLabel;
 
 
 /* Creates a UIWebView to hold a calendar */
@@ -24,6 +24,9 @@
 /* Refreshes each calendar UIWebView so that the calendars 
  * update with new events */
 -(void)refreshCalendars:(NSTimer *)timer;
+
+/* Check if the internet is on and reachable from the iOS device */
+-(BOOL)checkInternetReachibility;
 
 
 @end
