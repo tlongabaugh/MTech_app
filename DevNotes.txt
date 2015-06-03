@@ -1,7 +1,11 @@
 iPad app notes:
 
 1) Calendar portion:
--in app, pulls from a google calendar
+-Google calendar iframe embedded in a UIWebview
+-Admin can determine if they want one specific calendar or only some calendars displayed
+-Needs some sort of password protection
+-refreshes every 5 min
+-shows error message if iPad is offline
 
 2) RSS feed
 -stories
@@ -14,18 +18,12 @@ iPad app notes:
 -maybe have tags for what type of info it is?
 -links that either need to be pulled or are in app?
 
+-Should it 
+
+
 3) Info section
 - How to book time
 - How to book equipment
 - Contact information
-
-
-
-Calendar IDs:
-6th fl conference rm: 1n1gio9ncis5lqve16lbvtcj4g@group.calendar.google.com
-6th fl research lab: 3udavsn84d18mnmc08jf3kd3nc@group.calendar.google.com
-6th fl study/pantry: s71gid5rrkph3b10j2vt5am9j8@group.calendar.google.com
-buchla 200e 6th fl: nyu.edu_m1ibnpqm5110ffvk7cobjtuk2k@group.calendar.google.com
-dolan studio temporary: u6qidgtaac2eitnkgp34hblevo@group.calendar.google.com
-
+- should pull from some online web page somewhere, then format somehow..
 

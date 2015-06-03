@@ -34,7 +34,7 @@
 
 /* Begin PBXFileReference section */
 		E24854E01AF03F09006D013E /* html */ = {isa = PBXFileReference; lastKnownFileType = folder; path = html; sourceTree = "<group>"; };
-		E27611E51A8C244B00135601 /* Music Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music Tech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E27611E51A8C244B00135601 /* MARL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MARL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27611E91A8C244B00135601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27611EA1A8C244B00135601 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E27611EC1A8C244B00135601 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		E27611E61A8C244B00135601 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E27611E51A8C244B00135601 /* Music Tech.app */,
+				E27611E51A8C244B00135601 /* MARL.app */,
 				E27612011A8C244B00135601 /* MTech_iPadAppTests.xctest */,
 			);
 			name = Products;
@@ -163,7 +163,7 @@
 			);
 			name = MARL;
 			productName = MTech_iPadApp;
-			productReference = E27611E51A8C244B00135601 /* Music Tech.app */;
+			productReference = E27611E51A8C244B00135601 /* MARL.app */;
 			productType = "com.apple.product-type.application";
 		};
 		E27612001A8C244B00135601 /* MTech_iPadAppTests */ = {
