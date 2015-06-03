@@ -45,6 +45,8 @@
  
  */
 
+// Used in our app to determine whether or not we are connected to the internet
+
 #import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <netinet/in.h>

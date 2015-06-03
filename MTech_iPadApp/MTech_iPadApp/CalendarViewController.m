@@ -8,6 +8,7 @@
 
 #import "CalendarViewController.h"
 #import "Reachability.h"
+#import "MWFeedParser.h"
 
 @interface CalendarViewController ()
 
