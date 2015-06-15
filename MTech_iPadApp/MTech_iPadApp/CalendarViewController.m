@@ -8,7 +8,7 @@
 
 #import "CalendarViewController.h"
 #import "Reachability.h"
-#import "MWFeedParser.h"
+#import "RootViewController.h"
 
 @interface CalendarViewController ()
 
@@ -22,6 +22,7 @@
     UIWebView *researchLabCal;
     UIWebView *buchlaCal;
     UIWebView *studyPantryCal;
+    RootViewController *rootView;
 }
 @synthesize internetLabel;
 
@@ -31,15 +32,32 @@
     [super viewDidAppear:animated];
     // Get the size of the screen
     CGSize viewSize = self.view.frame.size;
+    
+    // root view controller reference
+    rootView = (RootViewController*) [self tabBarController];
 
     
-    // Initialize the array to hold studio names for the picker
+    // Initialize the array to hold studio names for the picker, then only add ones that user has selected
+    // in their settings page
     self.studioNames = @[@"Conference Room", @"Dolan",
                       @"Research Lab", @"Buchla", @"Study/Pantry"];
+    self.studioNamesMutable = [self.studioNames mutableCopy];
     
-    // Center the picker and resize it, position label
+    // Delete the calendar names that aren't needed
+    NSMutableIndexSet *indexesToDelete = [NSMutableIndexSet indexSet];
+    for (int i = 0; i<self.studioNames.count; i++) {
+        if (![rootView getCalendarEnabledForCalNum:i]) {
+            [indexesToDelete addIndex:i];
+        }
+    }
+    [self.studioNamesMutable removeObjectsAtIndexes:indexesToDelete];
+    
+    // Update the picker, center and resize it
+    [self.studioPicker reloadAllComponents];
     [self.studioPicker setFrame:CGRectMake(0.0, viewSize.height-162, 300.0, 162.0)];
     self.studioPicker.center = CGPointMake(viewSize.width/2, viewSize.height-162.0);
+    self.studioPicker.hidden = NO;
+    self.studioPicker.userInteractionEnabled = YES;
     
     // Format and place internet connection check label
     internetLabel.center = CGPointMake(viewSize.width/2, viewSize.height/2);
@@ -88,8 +106,21 @@
     // Register for foreground events so that calendars refresh when app is reopened
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willEnterForeground) name:UIApplicationWillEnterForegroundNotification object:nil];
 
+    [self.studioPicker selectRow:0 inComponent:0 animated:YES];
     
-    
+    // Configure the picker based on how many calendars are selected
+    if ([self.studioNamesMutable count] == 1) {
+        self.studioPicker.userInteractionEnabled = NO;
+        [self changeTOCalendarWithName:self.studioNamesMutable[0]];
+    }
+    else if ([self.studioNamesMutable count] == 0) {
+        self.studioPicker.hidden = YES;
+        conferenceRmCal.hidden = YES;
+        dolanCal.hidden = YES;
+        researchLabCal.hidden = YES;
+        buchlaCal.hidden = YES;
+        studyPantryCal.hidden = YES;
+    }
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
@@ -135,7 +166,7 @@
 numberOfRowsInComponent:(NSInteger)component
 {
     // Get the number of rows
-    return _studioNames.count;
+    return _studioNamesMutable.count;
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView
@@ -143,7 +174,7 @@ numberOfRowsInComponent:(NSInteger)component
             forComponent:(NSInteger)component
 {
     // Return the text string for the row
-    return _studioNames[row];
+    return _studioNamesMutable[row];
 }
 
 #pragma mark -
@@ -153,9 +184,15 @@ numberOfRowsInComponent:(NSInteger)component
       inComponent:(NSInteger)component
 {
     // Change the views according to user selection
+    [self changeTOCalendarWithName:_studioNamesMutable[row]];
     
+}
+
+-(void)changeTOCalendarWithName:(NSString*)calName
+{
+    // Change the views according to user selection
     // Conference room selected
-    if (row == 0) {
+    if ([calName isEqualToString:@"Conference Room"]) {
         conferenceRmCal.hidden = NO;
         dolanCal.hidden = YES;
         researchLabCal.hidden = YES;
@@ -163,7 +200,7 @@ numberOfRowsInComponent:(NSInteger)component
         studyPantryCal.hidden = YES;
     }
     // Dolan selected
-    else if (row == 1) {
+    else if ([calName isEqualToString:@"Dolan"]) {
         conferenceRmCal.hidden = YES;
         dolanCal.hidden = NO;
         researchLabCal.hidden = YES;
@@ -171,7 +208,7 @@ numberOfRowsInComponent:(NSInteger)component
         studyPantryCal.hidden = YES;
     }
     // Research Lab selected
-    else if (row == 2) {
+    else if ([calName isEqualToString:@"Research Lab"]) {
         conferenceRmCal.hidden = YES;
         dolanCal.hidden = YES;
         researchLabCal.hidden = NO;
@@ -179,7 +216,7 @@ numberOfRowsInComponent:(NSInteger)component
         studyPantryCal.hidden = YES;
     }
     // Buchla selected
-    else if (row == 3) {
+    else if ([calName isEqualToString:@"Buchla"]) {
         conferenceRmCal.hidden = YES;
         dolanCal.hidden = YES;
         researchLabCal.hidden = YES;
@@ -187,14 +224,13 @@ numberOfRowsInComponent:(NSInteger)component
         studyPantryCal.hidden = YES;
     }
     // Study/Pantry selected
-    else {
+    else if ([calName isEqualToString:@"Study/Pantry"]){
         conferenceRmCal.hidden = YES;
         dolanCal.hidden = YES;
         researchLabCal.hidden = YES;
         buchlaCal.hidden = YES;
         studyPantryCal.hidden = NO;
     }
-    
 }
 
 -(void)refreshCalendars:(NSTimer *)timer
@@ -242,6 +278,9 @@ numberOfRowsInComponent:(NSInteger)component
     [buchlaCal reload];
     [studyPantryCal reload];
 }
+
+
+
 
 
 @end

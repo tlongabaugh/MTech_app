@@ -33,7 +33,7 @@
                     <navigationItem key="navigationItem" id="liT-bw-eSO">
                         <barButtonItem key="rightBarButtonItem" title="Settings" style="plain" id="nl4-s8-5FA">
                             <connections>
-                                <segue destination="QHc-rB-hVS" kind="push" id="ZGj-Ru-MVr"/>
+                                <segue destination="QHc-rB-hVS" kind="push" identifier="settingsSegue" id="ZGj-Ru-MVr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

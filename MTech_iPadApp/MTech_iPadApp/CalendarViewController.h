@@ -13,6 +13,7 @@
 
 @interface CalendarViewController : UIViewController <UIWebViewDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
 @property (strong, nonatomic) NSArray *studioNames;
+@property (strong, nonatomic) NSMutableArray *studioNamesMutable;
 @property (weak, nonatomic) IBOutlet UIPickerView *studioPicker;
 @property (weak, nonatomic) IBOutlet UILabel *internetLabel;
 

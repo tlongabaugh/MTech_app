@@ -13,15 +13,69 @@
 @end
 
 @implementation RootViewController
-
+{
+    BOOL conferenceCalEnabled;
+    BOOL dolanCalEnabled;
+    BOOL researchCalEnabled;
+    BOOL buchlaCalEnabled;
+    BOOL studyPantryCalEnabled;
+    NSArray *isCalendarEnabledArray;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    conferenceCalEnabled = YES;
+    dolanCalEnabled = YES;
+    researchCalEnabled = YES;
+    buchlaCalEnabled = YES;
+    studyPantryCalEnabled = YES;
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)setCalendarEnabled:(BOOL)enabled forCalNum: (int)calNum {
+    switch (calNum) {
+        case 0:
+            conferenceCalEnabled = enabled;
+            break;
+        case 1:
+            dolanCalEnabled = enabled;
+            break;
+        case 2:
+            researchCalEnabled = enabled;
+            break;
+        case 3:
+            buchlaCalEnabled = enabled;
+            break;
+        case 4:
+            studyPantryCalEnabled = enabled;
+            break;
+        default:
+            break;
+    }
+}
+
+-(BOOL)getCalendarEnabledForCalNum:(int)calNum {
+    switch (calNum) {
+        case 0:
+            return conferenceCalEnabled;
+        case 1:
+            return dolanCalEnabled;
+        case 2:
+            return researchCalEnabled;
+        case 3:
+            return buchlaCalEnabled;
+        case 4:
+            return studyPantryCalEnabled;
+        default:
+            break;
+    }
+    // Should never reach here
+    return NO;
 }
 
 /*

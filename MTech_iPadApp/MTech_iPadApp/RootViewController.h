@@ -10,4 +10,7 @@
 
 @interface RootViewController : UITabBarController
 
+-(void)setCalendarEnabled:(BOOL)enabled forCalNum: (int)calNum;
+
+-(BOOL)getCalendarEnabledForCalNum:(int)calNum;
 @end

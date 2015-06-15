@@ -7,8 +7,7 @@
 //
 
 #import "SettingsTableViewController.h"
-
-//static NSString *CellIdentifier = @"cellIdentifier";
+#import "RootViewController.h"
 
 @interface SettingsTableViewController ()
 
@@ -18,6 +17,8 @@
 @implementation SettingsTableViewController
 {
     NSArray *tableData;
+    int switchNum;
+    RootViewController *rootView;
 }
 
 - (void)viewDidLoad {
@@ -26,6 +27,9 @@
     tableData = [NSArray arrayWithObjects:@"Conference Room", @"Dolan",
                  @"Research Lab", @"Buchla", @"Study/Pantry", nil];
     self.tableView.allowsSelection = NO;
+    
+    // Get reference to the root view controller, which stores which calendars are enabled
+    rootView = (RootViewController*) [self tabBarController];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,6 +54,8 @@
     //Identifier
     static NSString* cellIdentifier = @"switchCell";
     
+    // Cell number for updating info
+    switchNum = indexPath.row;
     // Create the cell, format to include switches
     UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     if (cell == nil) {
@@ -75,14 +81,13 @@
         l.font = [UIFont boldSystemFontOfSize:17.0f];
         l.frame = labelFrame;
         l.backgroundColor = [UIColor clearColor];
-        
         // Set accessibility
         cell.accessibilityLabel = @"Calendars";
         [cell.contentView addSubview:l];
     }
     
     // Set switches to on
-    ((UISwitch*)[cell.contentView viewWithTag:100]).on = 1; // "value" is whatever the switch should be set to
+    ((UISwitch*)[cell.contentView viewWithTag:100]).on = [rootView getCalendarEnabledForCalNum:indexPath.row]; // "value" is whatever the switch should be set to
     return cell;
 }
 
@@ -92,11 +97,19 @@
     return @"Enable/Disable Calendars";
 }
 
-
--(void) switchChanged:(id)sender {
+-(void) switchChanged:(id)sender
+{
+    CGPoint switchPositionPoint = [sender convertPoint:CGPointZero toView:[self tableView]];
+    NSIndexPath *indexPath = [[self tableView] indexPathForRowAtPoint:switchPositionPoint];
+    
+    // Get the switch value, set it's value in root view
     UISwitch* switcher = (UISwitch*)sender;
     BOOL value = switcher.on;
-    // Store the value and/or respond appropriately
+    [rootView setCalendarEnabled:value forCalNum:indexPath.row];
+
 }
 
 @end
+
+
+
