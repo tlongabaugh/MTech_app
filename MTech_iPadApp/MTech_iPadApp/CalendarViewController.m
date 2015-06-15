@@ -12,7 +12,6 @@
 
 @interface CalendarViewController ()
 
-
 @end
 
 @implementation CalendarViewController
@@ -30,9 +29,9 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    
     // Get the size of the screen
     CGSize viewSize = self.view.frame.size;
+
     
     // Initialize the array to hold studio names for the picker
     self.studioNames = @[@"Conference Room", @"Dolan",
@@ -243,7 +242,6 @@ numberOfRowsInComponent:(NSInteger)component
     [buchlaCal reload];
     [studyPantryCal reload];
 }
-
 
 
 @end

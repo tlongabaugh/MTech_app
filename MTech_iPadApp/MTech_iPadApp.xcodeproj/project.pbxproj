@@ -20,6 +20,7 @@
 		E27611F41A8C244B00135601 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E27611F31A8C244B00135601 /* FeedViewController.m */; };
 		E27611F91A8C244B00135601 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E27611F81A8C244B00135601 /* Images.xcassets */; };
 		E27612081A8C244B00135601 /* MTech_iPadAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E27612071A8C244B00135601 /* MTech_iPadAppTests.m */; };
+		E2827CEC1B2E4BE200B081A7 /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2827CEB1B2E4BE200B081A7 /* SettingsTableViewController.m */; };
 		E2A9E6341B19487A0011F9CC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A9E6331B19487A0011F9CC /* SystemConfiguration.framework */; };
 		E2A9E63A1B1950D50011F9CC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E2A9E6391B1950D50011F9CC /* Reachability.m */; };
 		E2B58CDC1AA90E3B0072F713 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2B58CDB1AA90E3B0072F713 /* RootViewController.m */; };
@@ -64,6 +65,8 @@
 		E27612011A8C244B00135601 /* MTech_iPadAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTech_iPadAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E27612061A8C244B00135601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E27612071A8C244B00135601 /* MTech_iPadAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTech_iPadAppTests.m; sourceTree = "<group>"; };
+		E2827CEA1B2E4BE200B081A7 /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsTableViewController.h; path = ../SettingsTableViewController.h; sourceTree = "<group>"; };
+		E2827CEB1B2E4BE200B081A7 /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsTableViewController.m; path = ../SettingsTableViewController.m; sourceTree = "<group>"; };
 		E2A9E6331B19487A0011F9CC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		E2A9E6381B1950D50011F9CC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		E2A9E6391B1950D50011F9CC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
@@ -145,6 +148,8 @@
 				E2B58CDB1AA90E3B0072F713 /* RootViewController.m */,
 				E27611EF1A8C244B00135601 /* CalendarViewController.h */,
 				E27611F01A8C244B00135601 /* CalendarViewController.m */,
+				E2827CEA1B2E4BE200B081A7 /* SettingsTableViewController.h */,
+				E2827CEB1B2E4BE200B081A7 /* SettingsTableViewController.m */,
 				E27611F21A8C244B00135601 /* FeedViewController.h */,
 				E27611F31A8C244B00135601 /* FeedViewController.m */,
 				E2E798881AB76F9A00F07180 /* InfoViewController.h */,
@@ -329,6 +334,7 @@
 				E2ED004A1B1FC9990029A4C0 /* MWFeedInfo.m in Sources */,
 				E2A9E63A1B1950D50011F9CC /* Reachability.m in Sources */,
 				E2B58CDC1AA90E3B0072F713 /* RootViewController.m in Sources */,
+				E2827CEC1B2E4BE200B081A7 /* SettingsTableViewController.m in Sources */,
 				E27611F11A8C244B00135601 /* CalendarViewController.m in Sources */,
 				E27611EB1A8C244B00135601 /* main.m in Sources */,
 			);

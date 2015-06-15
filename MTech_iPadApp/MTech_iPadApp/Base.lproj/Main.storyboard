@@ -30,7 +30,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar-icon" id="acW-dT-cKf"/>
+                    <navigationItem key="navigationItem" id="liT-bw-eSO">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" style="plain" id="nl4-s8-5FA">
+                            <connections>
+                                <segue destination="QHc-rB-hVS" kind="push" id="ZGj-Ru-MVr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="internetLabel" destination="QGd-BD-Gwl" id="FJl-YQ-Od0"/>
                         <outlet property="studioPicker" destination="d5p-Wt-HTT" id="YUf-q6-r5Y"/>
@@ -38,7 +44,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="883" y="-1437"/>
+            <point key="canvasLocation" x="1863" y="-1437"/>
+        </scene>
+        <!--Settings Table View Controller-->
+        <scene sceneID="Q8B-v2-yMX">
+            <objects>
+                <tableViewController id="QHc-rB-hVS" customClass="SettingsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="PLx-qZ-rYm">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="6v5-AV-fOa">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6v5-AV-fOa" id="3Ly-Wl-DsX">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jle-sr-DmG">
+                                            <rect key="frame" x="8" y="11" width="42" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="QHc-rB-hVS" id="jiH-dK-6x7"/>
+                            <outlet property="delegate" destination="QHc-rB-hVS" id="NrP-8p-jer"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="40z-9V-IUd"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RAx-Hc-h0V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2860" y="-1437"/>
         </scene>
         <!--FeedView-->
         <scene sceneID="wg7-f3-ORb">
@@ -82,7 +125,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="Eww-Ju-pGJ"/>
+                        <segue destination="ifq-O6-14h" kind="relationship" relationship="viewControllers" id="Eww-Ju-pGJ"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="WQ0-dq-Adf"/>
                         <segue destination="DaD-Hg-LTI" kind="relationship" relationship="viewControllers" id="5hu-NW-0ai"/>
                     </connections>
@@ -115,6 +158,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VT4-49-JDL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="919.03999999999996" y="989.86666666666667"/>
+        </scene>
+        <!--Calendar-->
+        <scene sceneID="AHE-mS-gLs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ifq-O6-14h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Calendar" image="calendar-icon" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AQW-js-hEg">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="CZM-H1-TiV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xPB-S7-Lwq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="-1437"/>
         </scene>
     </scenes>
     <resources>
